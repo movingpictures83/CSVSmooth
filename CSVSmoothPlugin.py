@@ -19,7 +19,7 @@ class CSVSmoothPlugin:
 
         self.idx = [0]
         for i in range(1, len(self.measurables)):
-           if (self.measurables[i] in measurables2 and self.measurables[i] in measurables3):
+           if (self.measurables[i] in measurables2 or self.measurables[i] in measurables3):
                self.idx.append(i)
 
     def output(self, outputfile):
